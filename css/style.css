@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+}
+
+button {
+    margin: 0;
+    padding: 0;
+}
+
+.hero {
+    height: 100vh;
+    padding: 40px 0 70px;
+    background-image: url(../img/main-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
