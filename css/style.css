@@ -1,20 +1,99 @@
 body {
     margin: 0;
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+ul, li {
+    list-style: none;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
 }
 
 button {
     margin: 0;
     padding: 0;
+    border: none;
+    background: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.container {
+    max-width: 941px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.logo {
+    margin-top: 40px;
 }
 
 .hero {
     height: 100vh;
-    padding: 40px 0 70px;
     background-image: url(../img/main-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: space-between;
     text-align: center;
+}
+
+.title {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 60px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 5.71px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.descr {
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+
+}
+
+.scroll-btn {
+    margin-bottom: 70px;
+    font-weight: 600;
+    font-size: 11px;
+    letter-spacing: 0.34em;
+    text-align: center;
+    color: #fff;
+}
+
+
+/* nav */
+.nav-logo {
+    padding-top: 4px;
+}
+.nav__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 48px;
 }
