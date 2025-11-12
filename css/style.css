@@ -1,3 +1,13 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     font-family: "Open Sans", sans-serif;
@@ -14,11 +24,12 @@ p {
     margin: 0;
 }
 
-ul,
-li {
+ul {
     list-style: none;
-    text-decoration: none;
+    padding: 0;
+    margin: 0;
 }
+
 
 a {
     display: inline-block;
@@ -87,7 +98,7 @@ button {
 
 
 /* nav */
-.nav {
+.header-nav {
     position: sticky;
     top: 0;
     z-index: 100;
@@ -97,11 +108,11 @@ button {
     margin-bottom: 58px;
 }
 
-.nav__logo img {
+.header-nav__logo img {
     display: block;
 }
 
-.nav__row {
+.header-nav__row {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -125,4 +136,94 @@ button {
 
 .menu__link:hover {
     color: #00A4E5;
+}
+
+/* our-story */
+.our-story {
+    margin-bottom: 118px;
+}
+
+.our-story__inner {
+    background-color: #E6E6E6;
+
+}
+
+.our-story__heading {
+    position: relative;
+    padding-bottom: 14px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0.13em;
+    text-align: center;
+    color: #48555b;
+    cursor: default;
+}
+
+.our-story__heading::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    width: 50px;
+    height: 2px;
+    background-color: #00b4d8;
+    transition: width 240ms ease, left 240ms ease, transform 240ms ease;
+    border-radius: 2px;
+}
+
+.our-story__heading:hover::after,
+.our-story__heading:focus::after {    
+  width: 65px;               
+}
+
+.our-story__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 20px;
+    padding-top: 50px;
+}
+
+.our-story__content {
+    max-width: 405px;
+    width: 100%;
+}
+
+
+.our-story__lead {
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 0.01em;
+    color: #16ace8;
+    color: #48555b;
+    margin-bottom: 30px;
+}
+
+.our-story__text {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 177%;
+    letter-spacing: 0.01em;
+    color: #48555b;
+}
+
+.our-story__steps {
+    display: flex;
+    gap: 20px;
+}
+
+.our-story__step {
+    width: 140px;
+    height: 224px;
+    padding: 15px 16px 15px 14px;
+}
+
+.our-story__step-label {
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 121%;
+    letter-spacing: 0.01em;
+    color: #fff;
 }
