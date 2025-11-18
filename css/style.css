@@ -348,11 +348,7 @@ address {
 }
 
 .footer__inner {
-    padding-top: 42px;
-    padding-bottom: 50px;
-}
-
-.footer__inner {
+    padding: 40px 0;
     display: flex;
     justify-content: space-between;
     gap: 15px;
