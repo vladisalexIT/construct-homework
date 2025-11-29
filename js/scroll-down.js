@@ -4,4 +4,3 @@ btn.addEventListener('click', () => {
   if (!nextSection) return;
   nextSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
 });
-console.log('привет')
