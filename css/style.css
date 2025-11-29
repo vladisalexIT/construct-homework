@@ -1,3 +1,50 @@
+@font-face {
+    font-family: "Open Sans";
+    src: url("/fonts/OpenSans-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("/fonts/OpenSans-SemiBold.woff2") format("woff2");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("/fonts/OpenSans-Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("/fonts/OpenSans-ExtraBold.woff2") format("woff2");
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Bebas Neue";
+    src: url("/fonts/BebasNeue-Regular.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --color-light: #ffffff;
+    --color-grey: #48555B;
+    --font-family-base: "Open Sans", sans-serif;
+    --font-family-accent:  "Bebas Neue", sans-serif;
+}
+
 html {
     box-sizing: border-box;
 }
@@ -35,7 +82,6 @@ ul {
     margin: 0;
 }
 
-
 a {
     display: inline-block;
     padding: 0;
@@ -49,7 +95,7 @@ button {
     padding: 0;
     border: none;
     background: none;
-    color: #fff;
+    color: var(--color-light);
     cursor: pointer;
 }
 
@@ -78,7 +124,7 @@ address {
     text-transform: uppercase;
     background-color: #00A4E5;
     transition: background-color .2s linear;
-    color: #fff;
+    color: var(--color-light);
 }
 
 .logo {
@@ -104,26 +150,26 @@ address {
     font-weight: 400;
     font-style: normal;
     letter-spacing: 5.71px;
-    color: #fff;
+    color: var(--color-light);
     margin-bottom: 5px;
 }
 
 .descr {
     font-size: 16px;
     font-weight: 500;
-    color: #fff;
+    color: var(--color-light);
 
 }
 
 .scroll-btn {
-    margin-bottom: 70px;
+    padding: 35px;
+    margin-bottom: 35px;
     font-weight: 600;
     font-size: 11px;
     letter-spacing: 0.34em;
     text-align: center;
-    color: #fff;
+    color: var(--color-light);
 }
-
 
 /* nav */
 .header-nav {
@@ -131,7 +177,7 @@ address {
     top: 0;
     z-index: 100;
     width: 100%;
-    background-color: #fff;
+    background-color: var(--color-light);
     border-bottom: 1px solid #E6E6E6;
     margin-bottom: 58px;
     transition: background-color 400ms ease;
@@ -164,7 +210,7 @@ address {
     font-size: 12px;
     font-weight: 600;
     letter-spacing: 1.09px;
-    color: #48555B;
+    color: var(--color-grey);
     transition: color .3s linear;
 }
 
@@ -181,7 +227,7 @@ address {
 }
 
 .menu__btn span {
-    background-color: #48555B;
+    background-color: var(--color-grey);
     height: 2px;
     width: 100%;
 }
@@ -204,7 +250,7 @@ address {
     font-size: 18px;
     letter-spacing: 0.13em;
     text-align: center;
-    color: #48555b;
+    color: var(--color-grey);
 }
 
 .section__heading {
@@ -214,7 +260,7 @@ address {
     font-weight: 700;
     font-size: 18px;
     letter-spacing: 0.13em;
-    color: #48555b;
+    color: var(--color-grey);
     cursor: default;
 }
 
@@ -256,7 +302,7 @@ address {
     line-height: 1.3;
     letter-spacing: 0.01em;
     color: #16ace8;
-    color: #48555b;
+    color: var(--color-grey);
     margin-bottom: 30px;
 }
 
@@ -265,7 +311,7 @@ address {
     font-size: 13px;
     line-height: 177%;
     letter-spacing: 0.01em;
-    color: #48555b;
+    color: var(--color-grey);
 }
 
 .our-story__steps {
@@ -287,7 +333,7 @@ address {
     font-size: 24px;
     line-height: 121%;
     letter-spacing: 0.01em;
-    color: #fff;
+    color: var(--color-light);
 }
 
 /* our-capabilities */
@@ -320,7 +366,7 @@ address {
     font-size: 11px;
     line-height: 173%;
     letter-spacing: 0.02em;
-    color: #48555b;
+    color: var(--color-grey);
 }
 
 .button:hover {
@@ -353,7 +399,7 @@ address {
     font-size: 16px;
     line-height: 150%;
     letter-spacing: 0.03em;
-    color: #48555b;
+    color: var(--color-grey);
 }
 
 .our-capabilities__item-descr {
@@ -361,7 +407,7 @@ address {
     font-size: 13px;
     line-height: 177%;
     letter-spacing: 0.01em;
-    color: #48555b;
+    color: var(--color-grey);
 }
 
 /* hero-cta */
@@ -386,7 +432,7 @@ address {
     line-height: 120%;
     letter-spacing: 0.01em;
     text-align: center;
-    color: #48555b;
+    color: var(--color-grey);
 }
 
 .footer__logo {
@@ -408,7 +454,7 @@ address {
     font-size: 22px;
     letter-spacing: 0.04em;
     text-align: center;
-    color: #fff;
+    color: var(--color-light);
 }
 
 .subscribe__form {
@@ -424,7 +470,7 @@ address {
     font-weight: 400;
     font-size: 14px;
     letter-spacing: 0.01em;
-    color: #48555b;
+    color: var(--color-grey);
 }
 
 
@@ -441,7 +487,7 @@ address {
 /* footer */
 .footer {
     background-color: #141A20;
-    color: #fff;
+    color: var(--color-light);
 }
 
 .footer__inner {
@@ -534,10 +580,6 @@ address {
 
 /* media */
 @media (max-width: 1024px) {
-    /* .our-capabilities__list {
-        margin: 0;
-    } */
-
     .our-capabilities__item {
         padding: 30px 13px;
     }
@@ -663,7 +705,7 @@ address {
     }
 
     .button {
-        padding-block: 10px;
+        padding-block: 9px;
     }
 
     .title {
@@ -687,8 +729,8 @@ address {
     }
 
     .our-story__lead {
-        font-size: 18px;
-        margin-bottom: 20px;
+        font-size: 16px;
+        margin-bottom: 15px;
     }
 
     .our-story__steps {
@@ -696,7 +738,7 @@ address {
     }
 
     .our-story__text {
-        line-height: 150%;
+        line-height: 1.2;
     }
 
     .our-story__step {
@@ -723,12 +765,17 @@ address {
     }
 
     .hero-cta__title {
-        font-size: 25px;
+        font-size: 18px;
         margin-bottom: 10px;
+    }
+
+    .subscribe__title {
+        font-size: 18px;
     }
 
     .subscribe__field-control {
         width: 100%;
+        padding: 9px 11px;
     }
 
     .form__button {
@@ -749,6 +796,10 @@ address {
 }
 
 @media (max-width: 430px) {
+    .hero__content {
+        padding-inline: 10px;
+    }
+
     .descr {
         font-size: 15px;
     }
